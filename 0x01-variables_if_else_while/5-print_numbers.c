@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Print numbers from 0 to 9.
  *
@@ -7,11 +6,11 @@
  */
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 0; i < 10; i++)
+	for (n = 0; n < 10; n++)
 	{
-		printf("%d", i);
+		printf("%d", n);
 	}
 	putchar('\n');
 	return (0);
