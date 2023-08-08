@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * _strdup - duplicate to new memory space location
@@ -13,14 +13,15 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	i = 0
-		while (str[i] != '\o')
-			i++;
+	i = 0;
+	while (str[i] != '\0')
+		i++;
 
 	aaa = malloc(sizeof(char) * (i + 1));
 
 	if (aaa == NULL)
 		return (NULL);
+
 	for (r = 0; str[r]; r++)
 		aaa[r] = str[r];
 
